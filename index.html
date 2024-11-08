@@ -4,19 +4,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<title>Lancome Idole</title>
+	<title>Lancome Idole - парфюмированная вода</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap&_v=20240410143503" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20240410143503" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240410143503">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap&_v=20241108143336" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20241108143336" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20241108143336">
+	<link rel="icon" type="image.webp" href="favicons/favicon-48x48.webp" sizes="48x48" />
+	<link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+	<link rel="shortcut icon" href="favicons/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.webp" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
-		<div class="preloader loaded" data-preloader>
+		<div class="preloader" data-preloader>
 			<div class="circle"></div>
 		</div>
 		<header class="header">
@@ -72,6 +75,11 @@
 								</a>
 								<a href="#" data-popup="#video" class="top__btn-video">
 									<img src="img/icons/play.svg" alt="" class="video__play">
+									<span style="--i:0"></span>
+									<span style="--i:1"></span>
+									<span style="--i:2"></span>
+									<span style="--i:3"></span>
+									<span style="--i:4"></span>
 								</a>
 							</div>
 						</div>
@@ -142,7 +150,7 @@
 							</div>
 						</div>
 						<div class="about__awards-item">
-							<img src="img/allure-2022.webp" alt="" class="awards__item-logo">
+							<img src="img/allure-2020.webp" alt="" class="awards__item-logo">
 							<div class="awards__item-text">
 								Победитель премии Best of Beauty 2022 allure
 							</div>
@@ -170,7 +178,7 @@
 							Флакон имеет изысканный и элегантный дизайн, который станет украшением любого туалетного столика.
 						</p>
 						<p class="advantages__text">
-							А боагодаря широкому ассортименту обьёмов и форматов, вы сможете подобрать идеальный вариант для себя.
+							А благодаря широкому ассортименту обьёмов и форматов, вы сможете подобрать идеальный вариант для себя.
 						</p>
 					</div>
 					<img src="img/advantages-1.webp" alt="" class="advantages__img animate__animated animate__fadeInUp wow animated" data-wow-duration="1s" data-wow-delay=".3s">
@@ -246,7 +254,7 @@
 					<div class="swiper-slide">
 						<div class="reviews__column">
 							<p class="reviews__text">
-								Данный аромат заставляет меня чувствовать себя особенной и уникальной. Он идеально подходит для тех, кто любит эксперементировать с ароматами и находит что-то новое.
+								Потрясающий аромат, который покорил моё сердце. Он сочетает в себе нежность, сладость и стойкость, создавая неповторимый шлейф.
 							</p>
 							<div class="reviews__user">
 								<img src="img/reviews-4.webp" alt="" class="reviews__user-photo">
@@ -262,7 +270,7 @@
 					<div class="swiper-slide">
 						<div class="reviews__column">
 							<p class="reviews__text">
-								Lancome Idole стал моим любимым ароматом благодаря его уникальному сочетанию нот и стойкости. Он идеально подходит для вечерних выходов и свиданий.
+								Lancome Idole является идеальным дополнением к образу современной женщины, подчёркивая её индивидуальность и уверенность.
 							</p>
 							<div class="reviews__user">
 								<img src="img/reviews-5.webp" alt="" class="reviews__user-photo">
@@ -278,7 +286,7 @@
 					<div class="swiper-slide">
 						<div class="reviews__column">
 							<p class="reviews__text">
-								Я влюбилась в Lancome Idole с первого вдоха! Его аромат очень яркий и зароминающийся. Рекомендую его всем, кто ценит качество и элегантность.
+								Lancome Idole - мой самый верный спутник на протяжении всего дня. Симфония роскоши, страсти и соблазна. Это просто настоящее произведение искусства!
 							</p>
 							<div class="reviews__user">
 								<img src="img/reviews-6.webp" alt="" class="reviews__user-photo">
@@ -346,57 +354,76 @@
 						</li>
 					</ul>
 					<div class="product__buy active tab-25">
-						<p class="price__text">Цена:</p>
+						<p class="price__text">Цена товара:</p>
 						<div class="product__prices">
 							<del class="old__price">2735.00</del>
 							<span class="new__price">1910.90 грн</span>
 						</div>
 						<p class="price__text">Выбор: 25 ml</p>
-						<select class="price__quantity" name="" id="">
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-							<option value="">5</option>
-						</select>
+						<div class="product__quantity">
+							<div class="select__header">
+								<span class="select__current">1</span>
+								<div class="select__icon"></div>
+							</div>
+							<div class="select__body">
+								<div class="select__item">1</div>
+								<div class="select__item">2</div>
+								<div class="select__item">3</div>
+								<div class="select__item">4</div>
+								<div class="select__item">5</div>
+							</div>
+						</div>
 						<button class="btn">
 							В корзину
 						</button>
+
 					</div>
 
 					<div class="product__buy tab-75">
-						<p class="price__text">Цена:</p>
+						<p class="price__text">Цена товара:</p>
 						<div class="product__prices">
 							<del class="old__price">3820.00</del>
 							<span class="new__price">3560.90 грн</span>
 						</div>
 						<p class="price__text">Выбор: 75 ml</p>
-						<select class="price__quantity" name="" id="">
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-							<option value="">5</option>
-						</select>
+						<div class="product__quantity">
+							<div class="select__header">
+								<span class="select__current">1</span>
+								<div class="select__icon"></div>
+							</div>
+							<div class="select__body">
+								<div class="select__item">1</div>
+								<div class="select__item">2</div>
+								<div class="select__item">3</div>
+								<div class="select__item">4</div>
+								<div class="select__item">5</div>
+							</div>
+						</div>
 						<button class="btn">
 							В корзину
 						</button>
 					</div>
 
 					<div class="product__buy tab-100">
-						<p class="price__text">Цена:</p>
+						<p class="price__text">Цена товара:</p>
 						<div class="product__prices">
 							<del class="old__price">4560.00</del>
 							<span class="new__price">4220.90 грн</span>
 						</div>
 						<p class="price__text">Выбор: 100 ml</p>
-						<select class="price__quantity" name="" id="">
-							<option value="">1</option>
-							<option value="">2</option>
-							<option value="">3</option>
-							<option value="">4</option>
-							<option value="">5</option>
-						</select>
+						<div class="product__quantity">
+							<div class="select__header">
+								<span class="select__current">1</span>
+								<div class="select__icon"></div>
+							</div>
+							<div class="select__body">
+								<div class="select__item">1</div>
+								<div class="select__item">2</div>
+								<div class="select__item">3</div>
+								<div class="select__item">4</div>
+								<div class="select__item">5</div>
+							</div>
+						</div>
 						<button class="btn">
 							В корзину
 						</button>
@@ -438,9 +465,9 @@
 	</a>
 
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20240410143503"></script>
-	<script src="js/wow.min.js?_v=20240410143503"></script>
-	<script src="js/app.min.js?_v=20240410143503"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20241108143336"></script>
+	<script src="js/wow.min.js?_v=20241108143336"></script>
+	<script src="js/app.min.js?_v=20241108143336"></script>
 </body>
 
 </html>
